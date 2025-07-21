@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GlitchX | Cyber Explorer</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
   <style>
     body {
       margin: 0;
@@ -58,7 +58,7 @@
     }
     main {
       padding: 2rem;
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
     }
     section {
@@ -90,6 +90,41 @@
       color: #8b949e;
       font-size: 0.9rem;
     }
+
+    .cert-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .cert-card {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 0.8rem;
+      width: 380px;
+      box-shadow: 0 0 8px #00000066;
+      text-align: center;
+    }
+
+    .cert-card img {
+      width: 100%;
+      border-radius: 6px;
+      border: 1px solid #30363d;
+    }
+
+    .cert-card h3 {
+      margin-top: 0.8rem;
+      color: #58a6ff;
+    }
+
+    @media screen and (max-width: 800px) {
+      .cert-card {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -101,6 +136,7 @@
   <nav>
     <a href="#about"><i class="fas fa-user-secret"></i> About</a>
     <a href="#learning"><i class="fas fa-brain"></i> Learning</a>
+    <a href="#certs"><i class="fas fa-certificate"></i> Certificates</a>
     <a href="#contact"><i class="fas fa-link"></i> Connect</a>
   </nav>
   <main>
@@ -124,6 +160,20 @@
         <li>Telegram Bot Development</li>
         <li>Web Dev: PHP, MySQL, and JS</li>
       </ul>
+    </section>
+
+    <section id="certs">
+      <h2>Certificates</h2>
+      <div class="cert-container">
+        <div class="cert-card">
+          <img src="cert.jpg" alt="Linux for Hackers Certificate">
+          <h3>Linux for Ethical Hacking</h3>
+        </div>
+        <div class="cert-card">
+          <img src="cert2.jpg" alt="Python for Hackers Certificate">
+          <h3>Python for Ethical Hacking</h3>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
